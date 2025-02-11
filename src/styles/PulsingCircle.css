@@ -1,0 +1,36 @@
+.container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 5s infinite forwards;
+}
+
+.item {
+  z-index: 100;
+  padding: 5px;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+
+  to {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}

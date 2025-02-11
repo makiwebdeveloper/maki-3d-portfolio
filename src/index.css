@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme inline {
+  --radius-inherit: inherit;
+}
+
+body {
+  color: #fff;
+}
