@@ -4,7 +4,7 @@ import Folder from "./Folder";
 const projectsList = [
   {
     title: "ACars",
-    url: "https://soundy-music.vercel.app/",
+    url: "https://acars.ua/",
     github: null,
   },
   {
@@ -45,11 +45,15 @@ export default function Projects(props) {
             key={project.title}
             className="h-[6px] flex items-center justify-between cursor-pointer hover:bg-white/10 rounded-[1px] p-[1px]"
           >
-            <a href={project.url} className="transition hover:text-blue-500">
+            <a
+              href={project.url}
+              target="_blank"
+              className="transition hover:text-blue-500"
+            >
               {project.title}
             </a>
             {project.github && (
-              <a href={project.github}>
+              <a href={project.github} target="_blank">
                 <GithubIcon className="w-[3px] h-[3px] transition hover:text-blue-500" />
               </a>
             )}
